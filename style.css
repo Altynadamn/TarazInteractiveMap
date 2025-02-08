@@ -1,0 +1,145 @@
+/* General styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Map container (No left shifting) */
+#map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: width 0.3s ease;
+}
+
+/* Sidebar styles */
+#sidebar {
+    width: 300px; /* Fixed width */
+    height: 100%;
+    background: #2c3e50;
+    color: white;
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: transform 0.3s ease;
+    z-index: 1000;
+}
+
+/* Hide sidebar */
+#sidebar.collapsed {
+    transform: translateX(-100%);
+}
+
+/* Sidebar contents */
+#sidebar div {
+    padding: 10px;
+    width: 80%;
+}
+#sidebar select{
+    width: 100%;
+}
+
+#sidebar input{
+    width: 95%;
+}
+#sidebar h2 {
+    text-align: center;
+}
+
+#sidebar label {
+    font-weight: bold;
+}
+
+#sidebar input, #sidebar select, #sidebar button {
+    padding: 8px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+#sidebar button {
+    background-color: #e74c3c;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#sidebar button:hover {
+    background-color: #c0392b;
+}
+
+/* Sidebar toggle button */
+#toggleSidebar {
+    position: absolute;
+    top: 10px;
+    left: 310px; /* Start next to sidebar */
+    transition: left 0.3s ease;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 1100;
+}
+
+/* Move button to the left when sidebar is collapsed */
+#sidebar.collapsed + #toggleSidebar {
+    left: 10px;
+}
+
+/* Popup image styles */
+.leaflet-popup-content img {
+    max-width: 150px;
+    height: auto;
+    display: block;
+    margin: 5px auto;
+    border-radius: 5px;
+}
+
+.leaflet-control-zoom {
+    position: absolute !important;
+    top: 10px !important;
+    right: 10px !important;
+}
+#applyFilter{
+    margin-top: 0;
+}
+/* Make popup images larger and well-aligned */
+.leaflet-popup-content img {
+    max-width: 100%; /* Use full width of popup */
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+
+/* Increase the size of the popup itself */
+.leaflet-popup-content {
+    text-align: center;
+    font-size: 16px;
+    max-width: 300px;
+}
+
+.leaflet-popup-content h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.leaflet-popup-content p {
+    margin: 5px 0;
+}
+
+
+/*
+42.89868, 71.38510
+
+☰
+
+*/

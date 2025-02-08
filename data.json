@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Aisha Bibi Mausoleum",
+    "lat": 42.9406,
+    "lng": 71.3376,
+    "image": "images/aisha-bibi.jpg",
+    "description": "A beautiful 12th-century mausoleum dedicated to Aisha Bibi, known for its intricate terracotta tile work."
+  },
+  {
+    "name": "Karakhan Mausoleum",
+    "lat": 42.8994,
+    "lng": 71.3792,
+    "image": "images/karakhan.jpg",
+    "description": "A historical site built in the 11th century, honoring the Karakhanid dynasty."
+  }
+]

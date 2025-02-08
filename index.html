@@ -1,0 +1,46 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Zhambyl Toponymic Atlas</title>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+    <div id="sidebar">
+        <div class="title_wrapper">
+            <h2>Карта топонимов Жамбылской области</h2>
+        </div>
+        <div class="type_wrapper">
+            <label for="typeFilter">Фильтрация по типам:</label>
+            <select id="typeFilter">
+                <option value="all">Все</option>
+                <option value="Гидронимы">Гидронимы</option>
+                <option value="Ойконимы">Ойконимы</option>
+                <option value="Оронимы">Оронимы</option>
+                <option value="Агоронимы">Агоронимы</option>
+                <option value="Годонимы">Годонимы</option>
+                <option value="Хоронимы">Хоронимы</option>
+                <option value="Экклезионимы">Экклезионимы</option>
+                <option value="Ойкодомонимы">Ойкодомонимы</option>
+                <option value="Некронимы">Некронимы</option>
+            </select>
+        </div>
+        <div class="name_wrapper">
+            <label for="search">Искать по названию:</label>
+            <input type="text" id="search" placeholder="Введите название...">
+        </div>
+        <div class="button_wrapper">
+            <button id="applyFilter">Применить</button>
+        </div>
+
+    </div>
+    <div id="map"></div>
+
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+    </body>
+    </html>
